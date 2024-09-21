@@ -14,28 +14,21 @@ const publishedTeamMembers = await getCollection("team", ({ data }) => {
 <Layout title="About">
   <Container>
     <Sectionhead>
-      <Fragment slot="title">Nosotros</Fragment>
-      <Fragment slot="desc">Somos una pequeña comunidad unida.</Fragment>
+      <Fragment slot="title">About</Fragment>
+      <Fragment slot="desc">We are a small passionate team.</Fragment>
     </Sectionhead>
 
     <div class="flex flex-col gap-3 mx-auto max-w-4xl mt-16">
       <h2 class="font-bold text-3xl text-gray-800">
-        Visión
+        Empowering the world with Astro.
       </h2>
       <p class="text-lg leading-relaxed text-slate-500">
-        "Ser una comunidad unida, segura y armoniosa, donde los vecinos trabajen en conjunto para mejorar la calidad de vida, el bienestar y la convivencia, logrando un ambiente que promueva el respeto, la participación activa y el desarrollo sostenible del condominio."        
+        We're a multi-cultural team from around the world! We come from diverse
+        backgrounds, bringing different personalities, experiences and skills to
+        the job. This is what makes our team so special.
       </p>
     </div>
-    <div class="flex flex-col gap-3 mx-auto max-w-4xl mt-16">
-        <h2 class="font-bold text-3xl text-gray-800">
-          Misión
-        </h2>
-        <p class="text-lg leading-relaxed text-slate-500">
-            "Promover la convivencia pacífica y la cooperación entre los vecinos, gestionando de manera transparente y eficiente los recursos y necesidades del condominio, a fin de garantizar un entorno seguro, limpio y respetuoso, en el que se fomente la participación y el sentido de pertenencia de todos los residentes."
-        </p>
-      </div>
-  
-    <!-- <div class="grid md:grid-cols-3 gap-10 mx-auto max-w-4xl mt-12">
+    <div class="grid md:grid-cols-3 gap-10 mx-auto max-w-4xl mt-12">
       {
         publishedTeamMembers.map((teamMemberEntry) => (
           <div class="group">
@@ -59,6 +52,6 @@ const publishedTeamMembers = await getCollection("team", ({ data }) => {
           </div>
         ))
       }
-    </div> -->
+    </div>
   </Container>
 </Layout>

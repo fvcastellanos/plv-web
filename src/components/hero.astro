@@ -1,9 +1,13 @@
 ---
 import { Picture } from "astro:assets";
-import heroImage from "assets/hero.png";
+import heroImage from "assets/img/plv.jpg";
 import Link from "@components/ui/link.astro";
 import { Icon } from "astro-icon/components";
 ---
+
+<style>
+  @import "assets/css/main.css";
+</style>
 
 <main
   class="grid lg:grid-cols-2 place-items-center pt-16 pb-8 md:pt-12 md:pb-24">
@@ -15,19 +19,21 @@ import { Icon } from "astro-icon/components";
       sizes="(max-width: 800px) 100vw, 620px"
       loading="eager"
       format="avif"
+      class={"rounded-corners"}
     />
   </div>
   <div>
     <h1
       class="text-5xl lg:text-6xl xl:text-7xl font-bold lg:tracking-tight xl:tracking-tighter">
-      Marketing website done with Astro
+      Condominio El Prado de Linda Vista
     </h1>
     <p class="text-lg mt-4 text-slate-600 max-w-xl">
-      Astroship is a starter template for startups, marketing websites & landing
+      Sitio web del Condominio El Prado de Linda Vista, ubicado en Villa Nueva, Guatemala
+      <!-- Astroship is a starter template for startups, marketing websites & landing
       pages.<wbr /> Built with Astro.build and TailwindCSS. You can quickly
-      create any website with this starter.
+      create any website with this starter. -->
     </p>
-    <div class="mt-6 flex flex-col sm:flex-row gap-3">
+    <!-- <div class="mt-6 flex flex-col sm:flex-row gap-3">
       <Link
         href="#"
         href="https://web3templates.com/templates/astroship-starter-website-template-for-astro"
@@ -48,6 +54,6 @@ import { Icon } from "astro-icon/components";
         <Icon class="text-black w-4 h-4" name="bx:bxl-github" />
          GitHub Repo
       </Link>
-    </div>
+    </div> -->
   </div>
 </main>
