@@ -1,14 +1,9 @@
 ---
 import { getCollection } from "astro:content";
-import { Picture } from "astro:assets";
 import Layout from "@layouts/Layout.astro";
 import Container from "@components/container.astro";
 import Sectionhead from "@components/sectionhead.astro";
 
-// Filter team entries with 'draft: false' & date before current date
-const publishedTeamMembers = await getCollection("team", ({ data }) => {
-  return !data.draft && data.publishDate < new Date();
-});
 ---
 
 <Layout title="About">
@@ -19,17 +14,29 @@ const publishedTeamMembers = await getCollection("team", ({ data }) => {
     </Sectionhead>
 
     <div class="flex flex-col gap-3 mx-auto max-w-4xl mt-16">
-      <h2 class="font-bold text-3xl text-gray-800">
+      <p class="text-lg leading-relaxed text-slate-500">
+        En El Condominio el Prado de Linda Vista, creemos que la convivencia pacífica, la colaboración y el respeto mutuo son los pilares fundamentales de nuestra comunidad. Nuestro objetivo es ofrecer un entorno seguro y armonioso, donde cada uno de nuestros residentes se sienta parte de una gran familia, respetando la privacidad y las necesidades de los demás.
+      </p>
+      <p class="text-lg leading-relaxed text-slate-500">
+        Promovemos un estilo de vida colaborativo, fomentando el diálogo abierto y el trabajo conjunto para mantener y mejorar las áreas comunes, siempre en busca del bienestar de todos. Aquí, valoramos el respeto como la base de nuestras interacciones, reconociendo la importancia de cuidar tanto los espacios compartidos como el ambiente de cordialidad entre vecinos.
+      </p>
+      <p class="text-lg leading-relaxed text-slate-500">
+        
+        Al vivir en aquí, no solo disfrutas de espacios verdes, instalaciones modernas y seguridad, sino también de una comunidad comprometida con la calidad de vida, donde las diferencias se respetan y las soluciones se encuentran de manera colaborativa.        
+      </p>
+    </div>
+    <div class="flex flex-col gap-3 mx-auto max-w-4xl mt-16"> 
+      <h3 class="font-bold text-3xl text-gray-800">
         Visión
-      </h2>
+      </h3>
       <p class="text-lg leading-relaxed text-slate-500">
         "Ser una comunidad unida, segura y armoniosa, donde los vecinos trabajen en conjunto para mejorar la calidad de vida, el bienestar y la convivencia, logrando un ambiente que promueva el respeto, la participación activa y el desarrollo sostenible del condominio."        
       </p>
     </div>
     <div class="flex flex-col gap-3 mx-auto max-w-4xl mt-16">
-        <h2 class="font-bold text-3xl text-gray-800">
+        <h3 class="font-bold text-3xl text-gray-800">
           Misión
-        </h2>
+        </h3>
         <p class="text-lg leading-relaxed text-slate-500">
             "Promover la convivencia pacífica y la cooperación entre los vecinos, gestionando de manera transparente y eficiente los recursos y necesidades del condominio, a fin de garantizar un entorno seguro, limpio y respetuoso, en el que se fomente la participación y el sentido de pertenencia de todos los residentes."
         </p>

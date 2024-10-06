@@ -1,9 +1,11 @@
 ---
-import Contactform from "@components/contactform.astro";
 import Container from "@components/container.astro";
 import Sectionhead from "@components/sectionhead.astro";
 import Layout from "@layouts/Layout.astro";
 import { Icon } from "astro-icon/components";
+import { Picture } from "astro:assets";
+
+import contactImage from "assets/img/contactanos.png";
 ---
 
 <Layout title="Contact">
@@ -15,9 +17,23 @@ import { Icon } from "astro-icon/components";
 
     <div class="grid md:grid-cols-2 gap-10 mx-auto max-w-4xl mt-16">
       <div>
-        <h2 class="font-medium text-2xl text-gray-800">Contacte a la Asociasión</h2>
+        <div class="py-6 md:order-1 hidden md:block">
+          <Picture
+            src={contactImage}
+            alt="Astronaut in the air"
+            widths={[200, 400, 600]}
+            sizes="(max-width: 800px) 100vw, 620px"
+            loading="eager"
+            format="avif"
+            class={"rounded-corners"}
+          />
+        </div>
+      
+      </div>
+      <div>
+        <h2 class="font-medium text-2xl text-gray-800">Contacte a la Administración</h2>
         <p class="text-lg leading-relaxed text-slate-500 mt-3">
-          ¿Tiene algo que decir? Estamos aquí para ayudar. Llene el formulario o envíe un correo electrónico o llame por teléfono.
+          ¿Tiene algo que decir? Estamos aquí para ayudar. Envíe un correo electrónico o llame por teléfono.
         </p>
         <div class="mt-5">
           <div class="flex items-center mt-2 space-x-2 text-gray-600">
@@ -25,17 +41,21 @@ import { Icon } from "astro-icon/components";
             <span>8 av. 5-35 Col. Linda Vista, Z. 4 Villa Nueva, Guatemala</span>
           </div><div class="flex items-center mt-2 space-x-2 text-gray-600">
             <Icon class="text-gray-400 w-4 h-4" name="uil:envelope" /><a
-              href="mailto:hello@astroshipstarter.com"
-              >correo@correo.com</a
+              href="mailto:asociacionelpradodelindavista@gmail.com">asociacionelpradodelindavista@gmail.com</a
             >
-          </div><div class="flex items-center mt-2 space-x-2 text-gray-600">
-            <Icon class="text-gray-400 w-4 h-4" name="uil:phone" /><a
-              href="tel:+(502) 12345678">(502) 12345678</a>
+          </div>
+          <div class="flex items-center mt-2 space-x-2 text-gray-600">
+            <Icon class="text-gray-400 w-4 h-4" name="uil:phone" />
+            <Icon class="text-gray-400 w-4 h-4" name="uil:whatsapp" />
+            <a href="tel:+(502) 41483360">(502) 41483360</a>
+            <span> - Administración</span>            
+          </div>
+          <div class="flex items-center mt-2 space-x-2 text-gray-600">
+            <Icon class="text-gray-400 w-4 h-4" name="uil:phone" />
+            <a href="tel:+(502) 66339872">(502) 66339872</a>
+            <span> - Garita</span>            
           </div>
         </div>
-      </div>
-      <div>
-        <!-- <Contactform /> -->
       </div>
     </div>
   </Container>

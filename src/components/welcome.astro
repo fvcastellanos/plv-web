@@ -1,0 +1,57 @@
+---
+// @ts-ignore
+import { Icon } from "astro-icon/components";
+
+const features = [
+  {
+    title: "Colaboración",
+    description:
+      "Nos apoyamos mutuamente en el cuidado de los espacios comunes y fomentamos el diálogo abierto para resolver cualquier situación de manera colectiva.",
+    icon: "bx:bxs-briefcase",
+  },
+  {
+    title: "Respeto",
+    description:
+      "Cada vecino valora la privacidad, las diferencias y los espacios compartidos, creando un ambiente donde la consideración por los demás fortalece la comunidad.",
+    icon: "bx:bxs-window-alt",
+  },
+  {
+    title: "Bienestar",
+    description:
+      "Nuestras actividades comunitarias están diseñadas para fomentar el equilibrio y la armonía, asegurando que cada vecino se sienta apoyado y en paz en su hogar",
+    icon: "bx:bxs-data",
+  },
+];
+
+---
+
+<div class="mt-16 md:mt-0">
+  <h2 class="text-4xl lg:text-5xl font-bold lg:tracking-tight">
+    ¡Bienvenidos Vecinos!
+  </h2>
+  <p class="text-lg mt-4 text-slate-600">
+    El Prado de Linda Vista es un espacio dedicado a la convivencia armoniosa, donde la tranquilidad y el respeto mutuo son fundamentales. Aquí, la comunidad es el corazón de todo lo que hacemos, y creemos que la colaboración y el respeto entre vecinos son esenciales para una vida en equilibrio.
+  </p>
+  <p class="text-lg mt-4 text-slate-600">
+    Las áreas verdes y las instalaciones comunes están diseñadas para fomentar un ambiente de serenidad y disfrute compartido, donde cada residente puede sentirse parte de una comunidad que valora tanto los espacios como las relaciones humanas. Más que un lugar donde vivir, es un entorno en el que las interacciones se basan en la empatía, la colaboración y el apoyo mutuo.
+  </p>
+  <p class="text-lg mt-4 text-slate-600">
+    Nuestro enfoque está en crear una atmósfera respetuosa y acogedora, donde todos puedan contribuir al bienestar común, disfrutando de la privacidad y de los espacios compartidos en armonía. Aquí, cada gesto de amabilidad y cada esfuerzo por el bien común son los pilares que construyen una comunidad más fuerte y unida.
+  </p>
+</div>
+
+<div class="grid sm:grid-cols-2 md:grid-cols-3 mt-16 gap-16">
+  {
+    features.map((item) => (
+      <div class="flex gap-4 items-start">
+        <div class="mt-1 bg-black rounded-full  p-2 w-8 h-8 shrink-0">
+          <Icon class="text-white" name={item.icon} />
+        </div>
+        <div>
+          <h3 class="font-semibold text-lg">{item.title}</h3>{" "}
+          <p class="text-slate-500 mt-2 leading-relaxed">{item.description}</p>
+        </div>
+      </div>
+    ))
+  }
+</div>
