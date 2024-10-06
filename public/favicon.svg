@@ -1,13 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 36 36">
-  <path fill="#000" d="M22.25 4h-8.5a1 1 0 0 0-.96.73l-5.54 19.4a.5.5 0 0 0 .62.62l5.05-1.44a2 2 0 0 0 1.38-1.4l3.22-11.66a.5.5 0 0 1 .96 0l3.22 11.67a2 2 0 0 0 1.38 1.39l5.05 1.44a.5.5 0 0 0 .62-.62l-5.54-19.4a1 1 0 0 0-.96-.73Z"/>
-  <path fill="url(#gradient)" d="M18 28a7.63 7.63 0 0 1-5-2c-1.4 2.1-.35 4.35.6 5.55.14.17.41.07.47-.15.44-1.8 2.93-1.22 2.93.6 0 2.28.87 3.4 1.72 3.81.34.16.59-.2.49-.56-.31-1.05-.29-2.46 1.29-3.25 3-1.5 3.17-4.83 2.5-6-.67.67-2.6 2-5 2Z"/>
-  <defs>
-    <linearGradient id="gradient" x1="16" x2="16" y1="32" y2="24" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#000"/>
-      <stop offset="1" stop-color="#000" stop-opacity="0"/>
-    </linearGradient>
-  </defs>
-	<style>
-    @media (prefers-color-scheme:dark){:root{filter:invert(100%)}}
-  </style>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 40 40" width="40px" height="40px"><path fill="#dbf2ff" d="M3.5 38.5L3.5 13.286 19.998 3.58 36.5 13.286 36.5 38.5z"/><path fill="#7496c4" d="M19.998,4.16L36,13.572V38H4V13.572L19.998,4.16 M19.998,3L3,13v26h34V13L19.998,3L19.998,3z"/><path fill="#b5ddf5" d="M4 34H36V38H4z"/><path fill="#f78f8f" d="M19.998 4.645L1.5 15.955 1.5 12.896 19.998 1.586 38.5 12.896 38.5 15.955z"/><path fill="#c74343" d="M19.998,2.172L38,13.176v1.887L20.519,4.378l-0.522-0.319l-0.522,0.319L2,15.063v-1.887 L19.998,2.172 M19.998,1L1,12.615v4.231L19.998,5.231L39,16.846v-4.231L19.998,1L19.998,1z"/><g><path fill="#ffc49c" d="M14.5 21.5H25.5V38.5H14.5z"/><path fill="#a16a4a" d="M25,22v16H15V22H25 M26,21H14v18h12V21L26,21z"/></g><path fill="#a16a4a" d="M23 30A1 1 0 1 0 23 32A1 1 0 1 0 23 30Z"/></svg>
